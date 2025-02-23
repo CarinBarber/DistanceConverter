@@ -4,6 +4,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DistanceConverter.Views.WeightPage">
     <ContentPage.Content>
-        
+        <ScrollView>
+            <Grid Padding="20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />  <!-- Column1 -->
+                    <ColumnDefinition Width="20" />    <!-- Column2 -->
+                    <ColumnDefinition Width="*" />     <!-- Column3 -->
+                </Grid.ColumnDefinitions>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />    <!-- Row1 -->
+                    <RowDefinition Height="20" />      <!-- Row2 -->
+                    <RowDefinition Height="auto" />    <!-- Row3 -->
+                    <RowDefinition Height="20" />      <!-- Row4 -->
+                    <RowDefinition Height="auto" />    <!-- Row5 -->
+                    <RowDefinition Height="20" />      <!-- Row6 -->
+                    <RowDefinition Height="auto" />    <!-- Row7 -->
+                    <RowDefinition Height="60" />      <!-- Row8 -->
+                    <RowDefinition Height="auto" />    <!-- Row9 -->
+                </Grid.RowDefinitions> 
+                
+                <Label Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="End" VerticalTextAlignment="Center" Text="Grams" />
+                <Border Grid.Row="0" Grid.Column="2" Stroke="black" StrokeThickness="1">
+                    <Entry x:Name="txtGrams" Keyboard="Numeric" TextChanged="TxtGrams_OnTextChanged" />
+                </Border>
+                <Label Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="End" VerticalTextAlignment="Center" Text="Ounces" />
+                <Border Grid.Row="2" Grid.Column="2" Stroke="black" StrokeThickness="1">
+                    <Entry x:Name="txtOunces" Keyboard="Numeric" TextChanged="TxtOunces_OnTextChanged" />
+                </Border>
+                <Label Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="End" VerticalTextAlignment="Center" Text="Pounds"/>
+                <Border Grid.Row="4" Grid.Column="2" Stroke="black" StrokeThickness="1">
+                    <Entry x:Name="txtPounds" Keyboard="Numeric" TextChanged="TxtPounds_OnTextChanged" />
+                </Border>
+                <Label Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="End" VerticalTextAlignment="Center" Text="Kilograms" />
+                <Border Grid.Row="6" Grid.Column="2" Stroke="black" StrokeThickness="1">
+                    <Entry x:Name="txtKilograms" Keyboard="Numeric" TextChanged="TxtKilograms_OnTextChanged" />
+                </Border>
+                
+                <StackLayout Margin="0,20,0,0" Grid.Row="8" Grid.ColumnSpan="3" Grid.Column="0" Orientation="Horizontal" >
+                    <Button x:Name="Clear" Text="Clear" HorizontalOptions="FillAndExpand" Clicked="Clear_OnClicked" />
+                    <Button x:Name="Convert" Text="Convert" HorizontalOptions="FillAndExpand" Clicked="Convert_OnClicked" />
+                </StackLayout>
+            </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
