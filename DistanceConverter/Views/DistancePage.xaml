@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DistanceConverter.Views.DistancePage">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid  Padding="20,20" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" /> <!-- Column 0 --> 
+                <ColumnDefinition Width="20" />     <!-- Column 1 -->
+                <ColumnDefinition Width="*" />    <!-- Column 2 -->
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />      <!-- Row 0 -->
+                <RowDefinition Height="20" />      <!-- Row 1 -->
+                <RowDefinition Height="auto" />    <!-- Row 2 -->
+                <RowDefinition Height="20" />      <!-- Row 3 -->
+                <RowDefinition Height="auto" />    <!-- Row 4 -->
+                <RowDefinition Height="20" />      <!-- Row 5 -->
+                <RowDefinition Height="auto" />    <!-- Row 6 -->
+                <RowDefinition Height="20" />      <!-- Row 7 -->
+                <RowDefinition Height="auto" />    <!-- Row 8 -->
+                <RowDefinition Height="20" />      <!-- Row 9 -->
+                <RowDefinition Height="auto" />    <!-- Row 10 -->
+                <RowDefinition Height="20" />      <!-- Row 11 -->
+                <RowDefinition Height="auto" />    <!-- Row 11 -->
+                <RowDefinition Height="20" />      <!-- Row 12 -->
+                <RowDefinition Height="60" />      <!-- Row 13 -->
+                <RowDefinition Height="auto" />      <!-- Row 14 -->
+
+            </Grid.RowDefinitions>
+            
+            <Label Grid.Column="0" Grid.Row="0" Text="Meters" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+            <Border Stroke="black" StrokeThickness="1" Grid.Column="2" Grid.Row="0">
+                <Entry x:Name="txtMeters" Keyboard="Numeric" TextChanged="TxtMeters_OnTextChanged" />
+            </Border>
+            
+            <Label Grid.Column="0" Grid.Row="2" Text="Inches" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+            <Border Stroke="black" StrokeThickness="1" Grid.Column="2" Grid.Row="2">
+                <Entry x:Name="txtInches" Keyboard="Numeric" TextChanged="TxtInches_OnTextChanged" />
+            </Border>
+            
+            <Label Grid.Column="0" Grid.Row="4" Text="Feet" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+            <Border Stroke="black" StrokeThickness="1"  Grid.Column="2" Grid.Row="4">
+                <Entry x:Name="txtFeet" Keyboard="Numeric" TextChanged="TxtFeet_OnTextChanged" />
+            </Border>
+            
+            <Label Grid.Column="0" Grid.Row="6" Text="Yards" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+            <Border Stroke="black" StrokeThickness="1"  Grid.Column="2" Grid.Row="6">
+                <Entry x:Name="txtYards" Keyboard="Numeric" TextChanged="TxtYards_OnTextChanged" />
+            </Border>
+            
+            <Label Grid.Column="0" Grid.Row="8" Text="Miles" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+            <Border Stroke="black" StrokeThickness="1"  Grid.Column="2" Grid.Row="8">
+                <Entry x:Name="txtMiles" Keyboard="Numeric" TextChanged="TxtMiles_OnTextChanged" />
+            </Border>
+            
+            <Label Grid.Column="0" Grid.Row="10" Text="Nautical" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+            <Border Stroke="black" StrokeThickness="1"  Grid.Column="2" Grid.Row="10">
+                <Entry x:Name="txtNautical" Keyboard="Numeric" TextChanged="TxtNautical_OnTextChanged" />
+            </Border>
+            
+            <Label Grid.Column="0" Grid.Row="12" Text="Kilometers" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+            <Border Stroke="black" StrokeThickness="1"  Grid.Column="2" Grid.Row="12">
+                <Entry x:Name="txtKilometers" Keyboard="Numeric" TextChanged="TxtKilometers_OnTextChanged" />
+            </Border>
+            
+            <StackLayout Margin="0,20,0,0" Orientation="Horizontal" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="14">
+                <Button Text="Clear" HorizontalOptions="FillAndExpand" x:Name="btnClear" Clicked="BtnClear_OnClicked" />
+                <Button Text="Convert" HorizontalOptions="FillAndExpand" x:Name="btnConvert" Clicked="BtnConvert_OnClicked" />
+            </StackLayout>
+        </Grid>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>
