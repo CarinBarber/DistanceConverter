@@ -5,8 +5,8 @@
              x:Class="DistanceConverter.Views.AboutPage">
     <ContentPage.Content>
         <StackLayout Padding="20,20">
-            <Label Text="Author: Carin Barber" />
             <Label Text="App Name: Distance Converter Pro" FontSize = "Large" />
+            <Label Text="Author: Carin Barber" FontSize="Large" />
             <Label Text="Version #0.0.1" />
         </StackLayout>
     </ContentPage.Content>

@@ -5,7 +5,7 @@
              x:Class="DistanceConverter.Views.DistancePage">
     <ContentPage.Content>
         <ScrollView>
-        <Grid  Padding="20,20" >
+        <Grid Padding="20,20" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto" /> <!-- Column 0 --> 
                 <ColumnDefinition Width="20" />     <!-- Column 1 -->
@@ -71,7 +71,10 @@
                 <Button Text="Clear" HorizontalOptions="FillAndExpand" x:Name="btnClear" Clicked="BtnClear_OnClicked" />
                 <Button Text="Convert" HorizontalOptions="FillAndExpand" x:Name="btnConvert" Clicked="BtnConvert_OnClicked" />
             </StackLayout>
-        </Grid>
+        
+            
+            <!--<Image Source="distance_main" /> -->
+            </Grid>
         </ScrollView>
         
     </ContentPage.Content>

@@ -7,21 +7,21 @@
         <ScrollView>
             <Grid Padding="20,20">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="auto" />  <!-- Column1 -->
-                    <ColumnDefinition Width="20" />    <!-- Column2 -->
-                    <ColumnDefinition Width="*" />     <!-- Column3 -->
+                    <ColumnDefinition Width="auto" />  <!-- Column0 -->
+                    <ColumnDefinition Width="20" />    <!-- Column1 -->
+                    <ColumnDefinition Width="*" />     <!-- Column2 -->
                 </Grid.ColumnDefinitions>
                 
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="auto" />    <!-- Row1 -->
-                    <RowDefinition Height="20" />      <!-- Row2 -->
-                    <RowDefinition Height="auto" />    <!-- Row3 -->
-                    <RowDefinition Height="20" />      <!-- Row4 -->
-                    <RowDefinition Height="auto" />    <!-- Row5 -->
-                    <RowDefinition Height="20" />      <!-- Row6 -->
-                    <RowDefinition Height="auto" />    <!-- Row7 -->
-                    <RowDefinition Height="60" />      <!-- Row8 -->
-                    <RowDefinition Height="auto" />    <!-- Row9 -->
+                    <RowDefinition Height="auto" />    <!-- Row0 -->
+                    <RowDefinition Height="20" />      <!-- Row1 -->
+                    <RowDefinition Height="auto" />    <!-- Row2 -->
+                    <RowDefinition Height="20" />      <!-- Row3 -->
+                    <RowDefinition Height="auto" />    <!-- Row4 -->
+                    <RowDefinition Height="20" />      <!-- Row5 -->
+                    <RowDefinition Height="auto" />    <!-- Row6 -->
+                    <RowDefinition Height="60" />      <!-- Row7 -->
+                    <RowDefinition Height="auto" />    <!-- Row8 -->
                 </Grid.RowDefinitions> 
                 
                 <Label Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="End" VerticalTextAlignment="Center" Text="Grams" />
